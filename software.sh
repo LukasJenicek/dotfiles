@@ -7,3 +7,7 @@ if dpkg -l | grep -q tilix ; then
     apt install tilix
     echo "Command succeeded"
 fi
+
+apt install git
+echo "Install Meld"
+apt install meld
