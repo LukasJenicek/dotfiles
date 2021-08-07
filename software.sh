@@ -9,5 +9,5 @@ if dpkg -l | grep -q tilix ; then
 fi
 
 apt install git
-echo "Install Meld"
 apt install meld
+apt install -s git=1:2.25.1-1ubuntu3.1 -V
