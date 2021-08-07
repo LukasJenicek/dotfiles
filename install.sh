@@ -1,9 +1,23 @@
 #!/bin/bash
 
-echo "copy tilix configuration to $HOME/tilix.json"
-cp tilix/tilix.json $HOME/tilix.json
-echo "if you want to set shortcut for using tilix with this configuration"
-echo "just set tilix --session=$HOME/tilix.json to your desired keyboard shortcut"
+function doIt() {
+	rsync --exclude ".git/" \
+		--exclude "install.sh" \
+		--exclude "software.sh" \
+		--exclude ".idea/" \
+		-avh --no-perms . ~;
 
-echo "copy gitconfig to home directory"
-cp .gitconfig $HOME/.gitconfig
+	source ~/.bash_profile;
+}
+
+# shellcheck disable=SC2166
+if [ "$1" == "--force" -o "$1" == "-f" ]; then
+	doIt;
+else
+	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
+	echo "";
+	if [[ $REPLY =~ ^[Yy]$ ]]; then
+		doIt;
+	fi;
+fi;
+unset doIt;

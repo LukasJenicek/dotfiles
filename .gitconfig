@@ -14,6 +14,8 @@
 	# Pull in remote changes for the current repository and all its submodules.
 	p = pull --recurse-submodules
 
+    pof = push --force origin
+
 	# Clone a repository including all submodules.
 	c = clone --recursive
 
@@ -69,6 +71,10 @@
     editor = vim
     excludesfile = ~/.gitignore
     attributesfile = ~/.gitattributes
+
+[user]
+    name = "Lukas Jenicek"
+    email = lukas.jenicek5@gmail.com
 
 [branch]
     sort = -committerdate
