@@ -7,6 +7,8 @@ done;
 unset file;
 
 __git_complete g __git_main
+complete -W "\`grep -oE '^[^.][a-zA-Z0-9_.-]+:([^=]|$)' Makefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
+
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
