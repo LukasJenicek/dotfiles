@@ -23,3 +23,12 @@ alias ls="command ls ${colorflag}"
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+alias gl="g log --pretty=oneline -n 20 --graph --abbrev-commit"
+alias gs="g status"
+alias gpo="g push origin"
+alias gpof="g push --force"
+alias gpu="g pull"
+alias ga="g add ."
+alias gamend="g commit --amend"
+alias ghard="g reset --hard"
