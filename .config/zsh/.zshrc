@@ -10,13 +10,9 @@ export HISTFILE="$HOME/.config/.zsh_history"
 export HISTFILESIZE=10000
 export HISTSIZE=10000
 
-
-export ASDF_DIR="$HOME/.config/asdf"
-export ASDF_CONFIG_FILE="$HOME/.config/asdf/.asdfrc"
-
-
-# alias groot="cd $(git rev-parse --show-toplevel)"
-# alias lproject="tree -a -I '.git|.vendor'"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,6 +102,12 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 source "$HOME/.config/zsh/.zsh_aliases"
+
+# must be after zsh plugin initialization otherwise it gets override
+export ASDF_CONFIG_FILE="$HOME/.config/asdf/.asdfrc"
+export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
+
+. "$ASDF_DATA_DIR/plugins/golang/set-env.zsh"
 
 # init zoxide
 # see: https://github.com/ajeetdsouza/zoxide
