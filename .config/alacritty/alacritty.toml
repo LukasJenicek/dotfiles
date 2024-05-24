@@ -1,4 +1,6 @@
 live_config_reload = true
+working_directory = "/home/lj"
+
 
 [colors]
 draw_bold_text_with_bright_colors = false
