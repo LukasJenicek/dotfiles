@@ -1,0 +1,2 @@
+alias groot='cd $(git rev-parse --show-toplevel)'
+alias lproject='tree -a -I ".git|.vendor"'

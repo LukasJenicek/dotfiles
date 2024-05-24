@@ -6,8 +6,8 @@ export ZSH="$ZDOTDIR/ohmyzsh"
 
 export PAGER=less
 
-alias groot="cd $(git rev-parse --show-toplevel)"
-alias lproject="tree -a -I '.git|.vendor'"
+# alias groot="cd $(git rev-parse --show-toplevel)"
+# alias lproject="tree -a -I '.git|.vendor'"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -104,5 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+
+source "$HOME/.config/zsh/.zsh_aliases"
+
 eval "$(zoxide init zsh)"
