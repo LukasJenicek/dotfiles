@@ -3,8 +3,11 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$ZDOTDIR/ohmyzsh"
+
 export PAGER=less
 
+alias groot="cd $(git rev-parse --show-toplevel)"
+alias lproject="tree -a -I '.git|.vendor'"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
