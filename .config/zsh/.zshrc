@@ -5,9 +5,14 @@
 export ZSH="$ZDOTDIR/ohmyzsh"
 
 export PAGER=less
+
 export HISTFILE="$HOME/.config/.zsh_history"
 export HISTFILESIZE=10000
 export HISTSIZE=10000
+
+
+export ASDF_DIR="$HOME/.config/asdf"
+export ASDF_CONFIG_FILE="$HOME/.config/asdf/.asdfrc"
 
 
 # alias groot="cd $(git rev-parse --show-toplevel)"
