@@ -102,5 +102,10 @@ source $ZSH/oh-my-zsh.sh
 
 source "$HOME/.config/zsh/.zsh_aliases"
 
+# init zoxide
+# see: https://github.com/ajeetdsouza/zoxide
 eval "$(zoxide init zsh)"
-eval "$(atuin init zsh)"
+# init atuin, keep arrow up with default behavior
+# see: https://github.com/atuinsh/atuin
+eval "$(atuin init zsh --disable-up-arrow)"
+
