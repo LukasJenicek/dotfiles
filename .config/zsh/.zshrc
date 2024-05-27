@@ -110,7 +110,7 @@ export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
 . "$ASDF_DATA_DIR/plugins/golang/set-env.zsh"
 
 # replace cd with zoxide
-. ./.zoxide
+. "$HOME/.config/zsh/.zoxide"
 # init zoxide
 # see: https://github.com/ajeetdsouza/zoxide
 eval "$(zoxide init zsh)"
