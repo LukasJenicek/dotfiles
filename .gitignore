@@ -1,1 +1,4 @@
 .config/zsh/ohmyzsh
+.config/zsh/.zcompdump*
+
+
