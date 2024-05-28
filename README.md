@@ -26,7 +26,7 @@
 # stow .
 
 # 5. Install dependencies
-# yay -S alacritty asdf-vm docker docker-compose dunst firefox flameshot less neofetch openssh pavucontrol ttf-hack-nerd telegram spotify waybar wlogout wofi wl-clipboard zsh
+# yay -S alacritty asdf-vm docker docker-compose dunst firefox flameshot fzf less neofetch openssh pavucontrol ttf-hack-nerd telegram spotify waybar wlogout wofi wl-clipboard zsh
 
 # 6. Install zsh powerline fonts
 # git clone https://github.com/powerline/fonts.git --depth=1
@@ -35,5 +35,8 @@
 # cd ..
 # rm -rf fonts
 
-# asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
-# asdf install golang -> install version defined in $HOME/.tool-versions
+# install tools defined in $HOME/.tool-versions
+# asdf plugin add golang
+# asdf plugin add nodejs
+# asdf plugin add lazydocker https://github.com/comdotlinux/asdf-lazydocker.git
+# asdf install
