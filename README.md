@@ -1,24 +1,21 @@
-## 1.Connect to wifi using nmcli
+# Dotfiles
 
-`nmcli device wifi connect SSID password {password}`
-
-## 2. Install yay
+## 1. Install yay
 
 ```bash
 cd $HOME
-git clone <https://aur.archlinux.org/yay-git>
+git clone <https://aur.archlinux.org/yay-git>
 cd yay-git
 makepkg -si
-cd $HOME
+cd ../
 rm -rf yay-git
 ```
 
-# 3. Clone existing dotfiles from master
+## 2. Clone project
 
 ```bash
-cd $HOME
+cd $HOME 
 git clone <https://github.com/LukasJenicek/dotfiles>
-install oh-my-zsh
 cd dotfiles/.config/zsh
 sh -c "$(curl -fsSL <https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh>)"
 git clone <https://github.com/zsh-users/zsh-autosuggestions> ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -28,46 +25,35 @@ git clone <https://github.com/fdellwing/zsh-bat.git> $ZSH_CUSTOM/plugins/zsh-bat
 cd $HOME
 ```
 
-# 4. Initialize stow
+## 3. Initialize stow
 
 ```bash
-cd $HOME
 yay -S stow
 stow
 ```
 
-# 5. Install dependencies
+## 4. Install dependencies
 
 ```bash
-# yay -S \ 
-alacritty asdf-vm \
-  bat blueman \
-  docker docker-compose dunst \ 
-  firefox flameshot fzf \
-  less neofetch neovim \
-  openssh pavucontrol \ 
-  ttf-hack-nerd telegram \
-  ripgrep spotify waybar wlogout wofi wl-clipboard zsh
+yay -S \ 
+    alacritty asdf-vm \
+    bat blueman \
+    docker docker-compose dunst \ 
+    firefox flameshot fzf \
+    hyprland \ 
+    ttf-hack-nerd telegram-desktop 
+    ripgrep spotify waybar wlogout wofi wl-clipboard zsh
 ```
 
-# 6. Install zsh powerline fonts
+## 5. Install zsh powerline fonts
 
-# git clone <https://github.com/powerline/fonts.git> --depth=1
-
-# cd fonts
-
-# ./install.sh
-
-# cd
-
-# rm -rf fonts
-
+```bash
+git clone <https://github.com/powerline/fonts.git> --depth=1
+./fonts/install.sh
+rm -rf fonts
 # install tools defined in $HOME/.tool-versions
-
-# asdf plugin add golang
-
-# asdf plugin add nodejs
-
-# asdf plugin add lazydocker <https://github.com/comdotlinux/asdf-lazydocker.git>
-
-# asdf install
+asdf plugin add golang
+asdf plugin add nodejs
+asdf plugin add lazydocker <https://github.com/comdotlinux/asdf-lazydocker.git>
+asdf install
+```
