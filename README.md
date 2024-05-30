@@ -30,7 +30,7 @@
 # stow .
 
 # 5. Install dependencies
-# yay -S alacritty asdf-vm bat blueman docker docker-compose dunst firefox flameshot fzf less neofetch openssh pavucontrol ttf-hack-nerd telegram spotify waybar wlogout wofi wl-clipboard zsh
+# yay -S alacritty asdf-vm bat blueman docker docker-compose dunst firefox flameshot fzf less neofetch neovim openssh pavucontrol ttf-hack-nerd telegram spotify waybar wlogout wofi wl-clipboard zsh
 
 # 6. Install zsh powerline fonts
 # git clone https://github.com/powerline/fonts.git --depth=1
