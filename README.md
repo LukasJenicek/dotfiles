@@ -38,8 +38,9 @@ stow
 yay -S \ 
     alacritty asdf-vm \
     bat blueman \
-    docker docker-compose dunst \ 
-    firefox flameshot fzf \
+    docker docker-compose dunst \
+    grim \ 
+    firefox flameshot-git fzf \
     hyprland \ 
     ttf-hack-nerd telegram-desktop 
     ripgrep spotify waybar wlogout wofi wl-clipboard zsh
