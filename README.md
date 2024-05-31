@@ -39,11 +39,15 @@ yay -S \
     alacritty asdf-vm \
     bat blueman \
     docker docker-compose dunst \
+    exa \
     grim \ 
     firefox flameshot-git fzf \
     hyprland \ 
-    ttf-hack-nerd telegram-desktop 
-    ripgrep spotify waybar wlogout wofi wl-clipboard zsh
+    ttf-hack-nerd telegram-desktop \
+    ripgrep \
+    spotify \
+    waybar wlogout wofi wl-clipboard \
+    zsh
 ```
 
 ## 5. Install zsh powerline fonts
