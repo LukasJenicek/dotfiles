@@ -43,6 +43,7 @@ yay -S \
     grim \ 
     firefox flameshot-git fzf \
     hyprland \ 
+    jless \
     ttf-hack-nerd telegram-desktop \
     ripgrep \
     spotify \
