@@ -46,7 +46,7 @@ yay -S \
     jless \
     ttf-hack-nerd telegram-desktop \
     ripgrep \
-    spotify \
+    spotify solaar \
     waybar wlogout wofi wl-clipboard \
     zsh
 ```
@@ -63,3 +63,8 @@ asdf plugin add nodejs
 asdf plugin add lazydocker <https://github.com/comdotlinux/asdf-lazydocker.git>
 asdf install
 ```
+
+
+## 6. Solaar
+- See: https://pwr-solaar.github.io/Solaar/rules
+
