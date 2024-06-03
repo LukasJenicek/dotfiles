@@ -63,6 +63,12 @@ style = "Regular"
 x = 0
 y = 0
 
+
+[[mouse.bindings]]
+mouse = "Right"
+action = "PasteSelection"
+
+
 [[keyboard.bindings]]
 chars = "\u0003"
 key = "C"

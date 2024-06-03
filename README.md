@@ -38,7 +38,7 @@ stow
 yay -S \ 
     alacritty asdf-vm \
     bat blueman \
-    docker docker-compose dunst \
+    direnv docker docker-compose dunst \
     exa \
     grim \ 
     firefox flameshot-git fzf \
@@ -64,7 +64,6 @@ asdf plugin add lazydocker <https://github.com/comdotlinux/asdf-lazydocker.git>
 asdf install
 ```
 
-
 ## 6. Solaar
-- See: https://pwr-solaar.github.io/Solaar/rules
 
+- See: <https://pwr-solaar.github.io/Solaar/rules>
