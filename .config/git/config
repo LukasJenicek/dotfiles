@@ -5,6 +5,8 @@
 	defaultBranch = master
 [push]
 	autoSetupRemote = true
+[pull]
+	rebase = true
 [core]
 	editor = vim
 	excludesFile = "~/.config/git/.gitignore"

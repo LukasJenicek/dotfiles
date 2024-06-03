@@ -109,6 +109,10 @@ opacity = 0.9
 startup_mode = "Windowed"
 title = "Alacritty"
 
+
+[selection]
+save_to_clipboard = true
+
 [window.class]
 general = "Alacritty"
 instance = "Alacritty"
