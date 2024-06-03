@@ -46,7 +46,7 @@ yay -S \
     jless \
     ttf-hack-nerd telegram-desktop \
     ripgrep \
-    spotify solaar \
+    spotify solaar slack-desktop \
     waybar wlogout wofi wl-clipboard \
     zsh
 ```
