@@ -81,7 +81,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git golang zsh-autosuggestions zsh-bat zsh-syntax-highlighting you-should-use asdf docker docker-compose kubectl postgres zoxide)
+plugins=(git golang zsh-autosuggestions zsh-bat zsh-syntax-highlighting kube-ps1 you-should-use asdf docker docker-compose kubectl postgres zoxide)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,3 +127,9 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 
 eval "$(direnv hook zsh)"
 eval "$(xremap --completions zsh)"
+function get_cluster_short() {
+  echo "$1" | cut -d - -f1
+}
+
+KUBE_PS1_CLUSTER_FUNCTION=get_cluster_short
+RPROMPT='$(kube_ps1)'

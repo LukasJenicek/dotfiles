@@ -7,5 +7,6 @@ keymap:
       CapsLock-k: Up
       CapsLock-l: Right
       CapsLock-e: Enter
+      CapsLock-w: KEY_DOT
     mode: default
 default_mode: default
