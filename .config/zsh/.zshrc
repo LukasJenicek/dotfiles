@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
+export PATH="$HOME/.pulumi/bin:$PATH"
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="$ZDOTDIR/ohmyzsh"
@@ -133,3 +135,41 @@ function get_cluster_short() {
 
 KUBE_PS1_CLUSTER_FUNCTION=get_cluster_short
 RPROMPT='$(kube_ps1)'
+
+function pulumi_stack_select {
+  if [[ $PWD/ = /home/lj/Projects/Sequence/devops/* ]]; then
+    pulumi stack select $1
+  else
+    echo "pulumi stack select $1 must be run in K8s repo" >&2
+  fi
+}
+
+function dev {
+  kubectl config use-context gke_sequence-gke-dev_us-central1_sequence-b27697b > /dev/null
+  kubectl config set-context --current --namespace dev-sequence >/dev/null
+# pulumi_stack_select dev
+}
+
+function dev2 {
+  kubectl config use-context gke_sequence-gke-dev_us-central1_sequence-b27697b > /dev/null
+  kubectl config set-context --current --namespace dev2-sequence >/dev/null
+# pulumi_stack_select dev2
+}
+
+function stg {
+  kubectl config use-context gke_sequence-gke-stg_us-central1_sequence-1c76c89 > /dev/null
+  kubectl config set-context --current --namespace stg-sequence >/dev/null
+# pulumi_stack_select stg
+}
+
+function next {
+  kubectl config use-context gke_sequence-gke-stg_us-central1_sequence-1c76c89 > /dev/null
+  kubectl config set-context --current --namespace next-sequence >/dev/null
+# pulumi_stack_select next
+}
+
+function prod {
+  kubectl config use-context gke_sequence-gke-prod_us-central1_sequence-ceb2b44 > /dev/null
+  kubectl config set-context --current --namespace prod-sequence >/dev/null
+  pulumi_stack_select prod
+}

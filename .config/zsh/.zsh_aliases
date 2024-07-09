@@ -1,3 +1,4 @@
 alias groot='cd $(git rev-parse --show-toplevel)'
 alias lproject='tree -a -I ".git|.vendor"'
 alias reloadwaybar='pkill waybar && hyprctl dispatch exec waybar'
+alias gfetch='git fetch && git rebase origin/master'
