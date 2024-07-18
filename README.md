@@ -48,7 +48,7 @@ yay -S \
     ripgrep \
     spotify solaar slack-desktop \
     waybar wlogout wofi wl-clipboard \
-    zsh
+    zellij zsh
 ```
 
 ## 5. Install zsh powerline fonts

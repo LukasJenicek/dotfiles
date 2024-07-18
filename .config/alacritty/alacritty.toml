@@ -47,6 +47,9 @@ render_timer = false
 [env]
 TERM = "alacritty"
 
+[shell]
+program="/usr/bin/zellij"
+
 [font]
 builtin_box_drawing = true
 size = 12.25
@@ -83,10 +86,10 @@ action = "ScrollHalfPageUp"
 key = "O"
 mods = "Control"
 
-[[keyboard.bindings]]
-action = "ScrollHalfPageDown"
-key = "P"
-mods = "Control"
+#[[keyboard.bindings]]
+#action = "ScrollHalfPageDown"
+#key = "P"
+#mods = "Control"
 
 [[keyboard.bindings]]
 action = "IncreaseFontSize"
