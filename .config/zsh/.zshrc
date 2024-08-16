@@ -147,7 +147,7 @@ function pulumi_stack_select {
 function dev {
   kubectl config use-context gke_sequence-gke-dev_us-central1_sequence-b27697b > /dev/null
   kubectl config set-context --current --namespace dev-sequence >/dev/null
-# pulumi_stack_select dev
+  pulumi_stack_select dev
 }
 
 function dev2 {
