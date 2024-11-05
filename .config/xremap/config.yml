@@ -9,4 +9,6 @@ keymap:
       CapsLock-e: Enter
       CapsLock-w: KEY_DOT
     mode: default
+    device:
+      only: ['Logitech G413 Carbon Mechanical Gaming Keyboard', 'Logitech MX Keys', 'AT Translated Set 2 keyboard']
 default_mode: default
