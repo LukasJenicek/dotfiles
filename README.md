@@ -37,7 +37,7 @@ stow
 ```bash
 yay -S \ 
     alacritty asdf-vm \
-    bat blueman \
+    bat blueman bluez bluez-utils \
     direnv docker docker-compose dunst \
     exa \
     grim \ 
