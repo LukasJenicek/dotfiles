@@ -10,5 +10,5 @@ keymap:
       CapsLock-w: KEY_DOT
     mode: default
     device:
-      only: ['dev/input/event14', '/dev/input/event4']
+      only: ['/dev/input/event4']
 default_mode: default
