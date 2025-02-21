@@ -46,7 +46,7 @@ render_timer = false
 TERM = "alacritty"
 
 [terminal.shell]
-program="/usr/bin/zellij"
+program="/home/lj/.cargo/bin/zellij"
 
 [font]
 builtin_box_drawing = true
